@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <ul class="thumb">
+            <li onmousemove="changePictures(`https://cdn-icons-png.flaticon.com/512/933/933757.png`)"><img src="https://cdn-icons-png.flaticon.com/512/933/933757.png" alt=""></li>
+            <li onmousemove="changePictures(`https://cdn-icons-png.flaticon.com/512/5499/5499206.png`)"><img src="https://cdn-icons-png.flaticon.com/512/5499/5499206.png" alt=""></li>
+            <li onmousemove="changePictures(`https://cdn-icons-png.flaticon.com/512/2044/2044129.png`)"><img src="https://cdn-icons-png.flaticon.com/512/2044/2044129.png" alt=""></li>
+        </ul>
+        <div class="product">
+            <h1>Nike Air Zoom</h1>
+            <div class="picture"><img id="picture" src="https://cdn-icons-png.flaticon.com/512/933/933757.png" alt=""></div>
+            <ul class="product_size">Size: 
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+            </ul>
+            <button>BUY NOW</button>
+        </div>
+    </div>
+    <script>
+        const changePictures = (picture) => {
+          return document.querySelector('#picture').src = picture;
+        }
+    </script>
+</body>
+</html>
